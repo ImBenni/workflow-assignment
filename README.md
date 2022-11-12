@@ -24,13 +24,13 @@ Then shortly after that, run the sass build.
 
 Installing Prettier
 
-    npm install --save-dev prettier
+    npm install prettier --save-dev 
 
 Installing ESlint
 
-    npm install eslint --save-dev
+    npm install eslint--save-dev
 
-Setting up ESLint, This will create a .eslintrc file that holds all the rules that eslint will follow.
+Next, we need to initialise ESLint. This will create a .eslintrc file in your project folder that contains the rules that ESLint will use:
 
     npx eslint --init
 
@@ -43,7 +43,7 @@ Recommended answers for this project
     Where does your code run? · browser
     What format do you want your config file to be in? · JSON
 
-Install pre-commit package
+We will use Mrm to create a pre-commit hook that will automatically run ESLint and Prettier on all files in our repository with the following command:
 
     npx mrm@2 lint-staged
 
@@ -78,7 +78,7 @@ Update lint-staged to run scripts on commit
 
 ### Unit testing with Jest
 
-Instal jest
+Installing Jest
 
     npm i -D jest@29.2.0
 
@@ -110,7 +110,7 @@ Recommended answers for this project
     Would you like to install them now? · Yes
     Which package manager do you want to use? · npm
 
-The result will be a .eslintrc.json like this:
+The result will be like this: (in .eslintrc.json)
 
 ```json
 {
